@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/InicioSesion.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/InicioSesion.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="EventGear.html">
+            <img id="logo" src="logo.png" alt="EVENTGEAR" class="logo">
+        </a>
+    </div>
+    <nav>
+        <ul class="menu_items">
+            <li><a href="Nosotros.html">Nosotros</a></li>
+            <li><a href="Catálogo.html">Catálogo</a></li>
+            <li><a href="LibroReclamaciones.html">Libro de Reclamaciones</a></li>
+        </ul>
+    </nav>
+
+    <div class="Inicio">
+        <a href="InicioSesion.html">Iniciar Sesion</a>
+    </div>
+</header>
+
+<div class="login">
+    <div class="contenedor">
+        <h2 class="title"> Bienvenido</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="usuario">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="contraseña">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña" placeholder="Introduzca su contraseña" required>
+            </div>
+            <div class="input-group">
+                <label for="rol">Rol</label>
+                <select id="rol" name="rol">
+                    <option id="cliente" value="cliente">Cliente</option>
+                    <option id="administrador" value="administrador">Administrador</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" class="login-btn">Iniciar Sesion</button>
+        </form>
+        <br>
+        <p class="registro">¿No tienes una cuenta? <a href="Registro.html">Registrate</a></p>
+    </div>
+</div>
+
+<script src="jss/login.js"></script>
+</script>
+</body>
+</html>
